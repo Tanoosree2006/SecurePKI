@@ -1,0 +1,2 @@
+﻿# ensure cron file uses LF on checkout (required by Linux cron)
+cron/2fa-cron text eol=lf
