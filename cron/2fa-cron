@@ -1,1 +1,1 @@
-﻿* * * * * root cd /app && /opt/venv/bin/python scripts/log_2fa_cron.py >> /cron/last_code.txt 2>&1
+﻿* * * * * root cd /app && PYTHONPATH=/app /opt/venv/bin/python -m scripts.log_2fa_cron >> /cron/last_code.txt 2>&1

@@ -1,6 +1,8 @@
 ﻿#!/usr/bin/env python3
-import pathlib, datetime
+import pathlib, datetime, sys, os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 from totp import generate_totp_code
+
 
 seed_path = pathlib.Path("/app/data/seed.txt")
 now = datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")
